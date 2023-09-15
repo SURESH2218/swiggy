@@ -1,0 +1,13 @@
+.shimmerInnerCard {
+  width: 350px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  opacity: 0.5;
+  height: 300px;
+}
+.shimmerCard {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}

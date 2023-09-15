@@ -1,0 +1,34 @@
+.restCard {
+  width: 200px;
+  height: max-content;
+  /* border: 1px solid black; */
+  margin-left: 1px;
+  margin-top: 2px;
+  background-color: aliceblue;
+  padding: 5px;
+}
+.restCard:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.search {
+  padding: 10px;
+}
+.resLogo {
+  width: 100%;
+  border-radius: 5px;
+}
+.resContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.filterButton {
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
