@@ -8,10 +8,10 @@ const Body = () => {
   const arr = useState(obj);
   const [filteredData, setFilteredData] = arr;
   const [isLoading, setisLoading] = useState(false);
-
+  const [searchText, setsearchText] = useState("");
   useEffect(() => {
     fetchData();
-    console.log("useeffect called");
+    // console.log("useeffect called");
   }, [filteredData]);
 
   console.log("body rendered");
@@ -42,6 +42,25 @@ const Body = () => {
   ) : (
     <div className="body">
       <div className="search">
+        <input
+          type="text"
+          placeholder="search>...."
+          value={searchText}
+          onChange={(event) => {
+            setsearchText(event.target.value);
+          }}
+        />
+        <button
+          className=""
+          onClick={() => {
+            const filteredRest = filteredData.filter((res) =>
+              res.action.text.toLowerCase.includes(searchText)
+            );
+            setFilteredData(filteredRest);
+          }}
+        >
+          search
+        </button>
         <button className="filterButton" onClick={handleButton}>
           top rated restaurants
         </button>

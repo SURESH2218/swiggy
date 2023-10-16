@@ -9,14 +9,35 @@
   width: 100px;
 }
 
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-items ul {
   display: flex;
   gap: 20px;
   padding-right: 20px;
+  justify-content: center;
 }
 
 .nav-items > ul > li {
   display: flex;
   text-decoration: none;
   font-size: 17px;
+}
+
+.loginButton {
+  /* padding: 10px; */
+  border-radius: 5px;
+  padding-inline: 5px;
+  /* outline: none; */
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  border: 1px solid black;
 }
